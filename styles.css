@@ -1,0 +1,61 @@
+/* Custom styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#home {
+    height: 100vh; 
+   /* background: url('/Image/tree.jpg') no-repeat center center/cover;*/
+    height: 100vh;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./Image/tree.jpg') no-repeat center center/cover;
+     /* Adjust opacity value here */
+    z-index: -1; /* Ensure it stays behind the content */
+}
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+#icon {
+    /* Increase icon size */
+    color: #fff; /* Set icon color (e.g., Bootstrap primary color) */
+    margin-right: 5px; /* Add spacing around the icon */
+    transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+.icon-home:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+    color: #0056b3; /* Darken color on hover */
+}
+.navbar-brand #element{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.navbar-brand .gradient{
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.dark-mode{
+    background-color: black;
+    color: #fff;
+}
